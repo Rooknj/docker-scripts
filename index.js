@@ -1,3 +1,7 @@
+"use strict";
+// Enable console log statements in this file
+/*eslint no-console:0*/
+
 const parseArgs = require("minimist");
 const spawn = require("cross-spawn");
 
