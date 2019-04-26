@@ -9,10 +9,13 @@ module.exports = (imageName, version) => {
     let dockerTag = tag;
     if (process.env.TRAVIS) {
       console.log("In CI");
-      const branchName = process.env.TRAVIS_BRANCH;
-      if (branchName) {
+      const tagName = process.env.TRAVIS_TAG;
+      if (tagName) {
+        dockerTag = VERSION;
+      } else {
+        const branchName = process.env.TRAVIS_BRANCH;
         if (branchName === "master") {
-          dockerTag = VERSION;
+          dockerTag = "master";
         } else {
           dockerTag = "test";
         }
