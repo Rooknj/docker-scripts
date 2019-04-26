@@ -1,5 +1,8 @@
-language: node_js
-node_js: 10
-cache: npm
-script: node src/index.js
-
+deploy:
+  provider: npm
+  email: rooknj@gmail.com
+  api_key:
+    secure: V79NFK27T8ni6CkoNF0wpWmYi8DdLA9CkZGZg7a0eeql4z3MEbJGrqphEvPaY+VZHzCBVoXYKEvcbbAMSObZnxSNR3kbmSxjYMQ1sDYNmiezsjEqcoZpDOhtF06VgBs4lgUAe5+WmLe9/M/DqHTYaeIlDe+e06i735dKhLM0fCf7dwC3jWHU/JeCOc9Dt3P5H550f7igr+TsyJqqrhtafzhYdDfE3gnH6WTHKKevv8Wtvvblv7P9X02IZOmV+l+ZuZPxH2tjgz2O+Q4y36RcjXk+ePXO3r1SBGxhpn9BZ5PueYTo/+fO5nXKSfNdCc7ZvzLqpJ3QLoN3C7X1S6PaeenDebeQrrk8NvBz0rnJi1ivsGRzwpTHXCyXbnmkfKpPldP0fUb1aVPxImbXOEESI8a4IwpuwoJsWttTZhs0m56GxGU7FNUjQ0hyWKXeBhWIvOKqSytM21RpjJW6kb2hfK8du5TCgw27MD++H48EGIcNQLh96/pev1kkT64go+lSYDPlOjRn+3vpb3y7s4KxNSEJ0Of2yr4fUVic/w9GbcObWzccFK1ykH30dO4Oj0o1tljTq6NfdY4DmZ6hXEKYQj7UE7u5ZIHL5Gr+DJk1fSdMl5d34EnTwnIizqNWoZgu05Nkb7HcstwdieY85Q95yOM3pZClTOp1xDAHxg9YSyw=
+  on:
+    tags: true
+    repo: Rooknj/docker-scripts
